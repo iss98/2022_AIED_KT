@@ -16,7 +16,7 @@ st.write("**팀원** : 수학교육과 김래영, 송무호, 신인섭")
 model = RKT(400)
 model.load_state_dict(torch.load("best_model.pt", map_location = "cpu"))
 model.eval()
-df = pd.read_csv("save/sample_text.csv", index_col = 0)
+df = pd.read_csv("sample_text.csv", index_col = 0)
 
 item1 = torch.tensor(df.iloc[0,:].astype('float32').values).unsqueeze(dim = 0)
 item2 = torch.tensor(df.iloc[1,:].astype('float32').values).unsqueeze(dim = 0)
