@@ -44,7 +44,7 @@ response2 = st.radio("정답을 골라주세요", ("a=b=c", "a=b<c", "a<b=c", "a
 st.subheader("문항3")
 st.markdown("다음은 첫째 항이 $a-15d$, 공차가 $d$, 항의 개수가 31인 등차수열이다.")
 st.markdown("$a-15d, ~\cdots,~a-d,~a,~a+d,~\cdots,~a+15d$")
-st.markdown("위 항들의 값이 표준편차를 $\sigma$라고 할 때, $\frac{\sigma}{d}$의 값을 소수점 아래 둘째 자리까지 구하시오.")
+st.markdown("위 항들의 값이 표준편차를 $\sigma$라고 할 때, ${\sigma}/{d}$의 값을 소수점 아래 둘째 자리까지 구하시오.")
 st.markdown("(단, $d > 0$이고 $\sqrt{5} = 2.25$로 계산한다.) ")
 response3 = st.number_input("정답을 적어주세요", min_value = 7.00, max_value = 10.00, step = 0.01)
 
